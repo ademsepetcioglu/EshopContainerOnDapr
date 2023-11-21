@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34302.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C1350262-A431-4FB8-8DF8-40B5068BD756}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dapr", "dapr", "{F7D59318-F47F-4F2D-BB3E-CEFA4CCDF9E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{887CE1E0-D500-4225-8031-4573C20828C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aggregators", "Aggregators", "{9B3BA501-0BE9-4D8D-8A19-A31B54DDFF9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{DCE9BC27-FE37-407F-A4EB-EDC5E2DD4FA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BCDFA46A-45D4-4F7D-BB93-D0868993CD05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EshopContainerOnDapr.Abstractions", "src\Common\EshopContainerOnDapr.Abstractions\EshopContainerOnDapr.Abstractions.csproj", "{AD350794-3D2F-4522-99D9-DD4BAE597961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EshopContainerOnDapr.Dapr", "src\Common\EshopContainerOnDapr.Dapr\EshopContainerOnDapr.Dapr.csproj", "{5928684C-BD88-42AA-B17F-68D317FAE7E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EshopContainerOnDapr.Data", "src\Common\EshopContainerOnDapr.Data\EshopContainerOnDapr.Data.csproj", "{A6B6CAC9-4CB0-40D2-B5F3-3A7EEF2FDAB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD350794-3D2F-4522-99D9-DD4BAE597961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD350794-3D2F-4522-99D9-DD4BAE597961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD350794-3D2F-4522-99D9-DD4BAE597961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD350794-3D2F-4522-99D9-DD4BAE597961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5928684C-BD88-42AA-B17F-68D317FAE7E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5928684C-BD88-42AA-B17F-68D317FAE7E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5928684C-BD88-42AA-B17F-68D317FAE7E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5928684C-BD88-42AA-B17F-68D317FAE7E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B6CAC9-4CB0-40D2-B5F3-3A7EEF2FDAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B6CAC9-4CB0-40D2-B5F3-3A7EEF2FDAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B6CAC9-4CB0-40D2-B5F3-3A7EEF2FDAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B6CAC9-4CB0-40D2-B5F3-3A7EEF2FDAB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{887CE1E0-D500-4225-8031-4573C20828C1} = {C1350262-A431-4FB8-8DF8-40B5068BD756}
+		{9B3BA501-0BE9-4D8D-8A19-A31B54DDFF9B} = {887CE1E0-D500-4225-8031-4573C20828C1}
+		{DCE9BC27-FE37-407F-A4EB-EDC5E2DD4FA1} = {C1350262-A431-4FB8-8DF8-40B5068BD756}
+		{BCDFA46A-45D4-4F7D-BB93-D0868993CD05} = {C1350262-A431-4FB8-8DF8-40B5068BD756}
+		{AD350794-3D2F-4522-99D9-DD4BAE597961} = {DCE9BC27-FE37-407F-A4EB-EDC5E2DD4FA1}
+		{5928684C-BD88-42AA-B17F-68D317FAE7E2} = {DCE9BC27-FE37-407F-A4EB-EDC5E2DD4FA1}
+		{A6B6CAC9-4CB0-40D2-B5F3-3A7EEF2FDAB5} = {DCE9BC27-FE37-407F-A4EB-EDC5E2DD4FA1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B74A8EC6-3198-414D-8C47-B4A6F19110C1}
+	EndGlobalSection
+EndGlobal
