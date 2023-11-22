@@ -1,0 +1,16 @@
+﻿global using Dapr.Actors;
+global using Order.Application.Actors;
+global using MediatR;
+global using Dapr.Actors.Client;
+global using Microsoft.Extensions.Logging;
+global using Order.Application.IntegrationEvents;
+global using EshopContainerOnDapr.Dapr.Abstractions;
+global using Dapr.Actors.Runtime;
+global using EshopContainerOnDapr.Dapr.Events;
+global using AutoMapper;
+global using Order.Application.Models;
+global using EshopContainerOnDapr.Abstractions.Model;
+global using Order.Application.Services.OrderStockConfirmed;
+global using Order.Domain.AggregatesModel.OrderAggregate;
+global using Order.Domain.AggregatesModel.AddressAggregate;
+global using Order.Domain.AggregatesModel.OrderItemAggregate;
