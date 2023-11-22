@@ -4,13 +4,12 @@ using Basket.Application.Services.BasketServices.GetBasketDetails;
 using Basket.Application.Services.BasketServices.UpdateBasketDetails;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
 namespace Basket.API.Controllers
 {
-    [Route("api/v1/[controller]")]
+    [Route("api/v1/[controller]/[action]")]
     [ApiController]
     [AllowAnonymous]
     public class BasketController : ControllerBase

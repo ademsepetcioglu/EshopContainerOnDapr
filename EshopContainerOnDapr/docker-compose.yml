@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  rabbitmq:
+     image: rabbitmq:3-management-alpine
+
+  redis:
+    image: redis:alpine
+
+  redisinsight:
+    image: redislabs/redisinsight:latest
+    ports:
+      - '8001:8001'
+    volumes:
+      - ./Users/ajeetraina/data/redisinsight:/db 
+
+  zipkin:
+    image: openzipkin/zipkin-slim:latest
+
+  basket-api:
+    image: ${DOCKER_REGISTRY-}basketapi
+    build:
+      context: .
+      dockerfile: src/Services/Basket/Basket.API/Dockerfile
+
+  basket-api-dapr:
+   image: "daprio/daprd:1.9.4"
+   network_mode: "service:basket-api"
+   depends_on:
+      - basket-api
